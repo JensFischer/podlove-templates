@@ -5,7 +5,7 @@
 {# role - define the contributor role to be listed #}
 {# contributor_column - define the contributor role to be listed #}
 
-{% import "metaebene-macros" as metaebene %}
+{% import "macros" as macros %}
 
 
 {% set icon_size = '96' %}
@@ -34,8 +34,8 @@
 
                 <div class="episode_meta">
 
-                    {{ metaebene.print_date(episode.publicationDate, language) }}<br/>
-                    {{ metaebene.print_duration(episode.duration, language) }}
+                    {{ macros.print_date(episode.publicationDate, language) }}<br/>
+                    {{ macros.print_duration(episode.duration, language) }}
 
                 </div>
 
